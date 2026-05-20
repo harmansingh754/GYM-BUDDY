@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-dumbbell"></i> GymBuddy
+  </div>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="workout.html">Workout</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="buddies.html">Buddies</a>
+    <a href="profile.html" class="active">Profile</a>
+    <a href="login.html">Login</a>
+    <button id="themeToggle" class="theme-btn">
+  🌙
+</button>
+  </nav>
+</header>
+
+<section class="page-title">
+  <h1>Profile & Progress</h1>
+</section>
+
+<section class="profile-section">
+
+  <div class="glass-card profile-card">
+
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" alt="">
+
+    <h2>Harman Singh</h2>
+
+    <p>Fitness Enthusiast</p>
+
+  </div>
+
+  <div class="glass-card">
+
+    <h2>BMI Calculator</h2>
+
+    <form id="bmiForm">
+
+      <input type="number" id="height" placeholder="Height (cm)" required>
+
+      <input type="number" id="weight" placeholder="Weight (kg)" required>
+
+      <button class="btn" type="submit">
+        Calculate BMI
+      </button>
+
+    </form>
+
+    <h3 id="bmiResult"></h3>
+
+  </div>
+
+  <div class="glass-card">
+
+    <h2>Workout Streak</h2>
+
+    <h1 id="streak">0 Days</h1>
+
+    <button class="btn" id="increaseStreak">
+      Completed Workout
+    </button>
+
+  </div>
+
+</section>
+
+<script src="js/profile.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>

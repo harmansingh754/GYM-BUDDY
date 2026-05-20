@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Timetable</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-dumbbell"></i> GymBuddy
+  </div>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="workout.html">Workout</a>
+    <a href="timetable.html" class="active">Timetable</a>
+    <a href="buddies.html">Buddies</a>
+    <a href="profile.html">Profile</a>
+    <a href="login.html">Login</a>
+    <button id="themeToggle" class="theme-btn">
+  🌙
+</button>
+  </nav>
+</header>
+
+<section class="page-title">
+  <h1>Timetable & Free Slots</h1>
+</section>
+
+<section class="form-section">
+
+  <div class="glass-card">
+
+    <form id="slotForm">
+
+      <input type="text" id="day" placeholder="Day" required>
+
+      <input type="time" id="time" required>
+
+      <button type="submit" class="btn">
+        Save Free Slot
+      </button>
+
+    </form>
+
+  </div>
+
+  <div class="glass-card">
+
+    <h2>Your Free Slots</h2>
+
+    <ul id="slotList"></ul>
+
+  </div>
+
+</section>
+
+<script src="js/timetable.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
