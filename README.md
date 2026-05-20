@@ -83,6 +83,8 @@ The project is specially designed for college students to manage workouts, track
 
 ---
 
+Live Demo
+visit the website here; https://harmansingh754.github.io/GYM-BUDDY/
 
 # 👨‍💻 Developed By
 
